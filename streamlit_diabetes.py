@@ -1,6 +1,9 @@
 import pickle
 import streamlit as st
-
+st.set_page_config(
+    page_title="Cek Kesehatan | Diabetes",
+    page_icon="👩‍⚕️",
+)
 # membaca model
 diabetes_model = pickle.load(open('diabetes_model.sav','rb'))
 
